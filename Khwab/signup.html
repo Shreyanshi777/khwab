@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Khwab - Sign Up</title>
+  <link rel="stylesheet" href="log.css" type="text/css" />
+</head>
+<body>
+  <div class="auth-container">
+    <h2>Create Your Khwab Account</h2>
+    <form id="signupForm" class="auth-form">
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email" required />
+      <input type="password" placeholder="Password" required />
+      <button type="submit">Sign Up</button>
+      <p class="auth-link">Already have an account? <a href="login.html">Login</a></p>
+    </form>
+  </div>
+
+  <script>
+    // Redirect to homepage after successful sign-up
+    document.getElementById('signupForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // prevent default form behavior
+      // You can add form validation or user data storage logic here if needed
+      window.location.href = "index.html"; // redirect to home
+    });
+  </script>
+</body>
+</html>
+
